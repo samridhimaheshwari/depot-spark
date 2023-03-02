@@ -1,0 +1,60 @@
+Spark Executor Command: "/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home/bin/java" "-cp" "/Users/samridhi/spark/conf/:/Users/samridhi/spark/jars/*" "-Xmx1024M" "-Dspark.driver.port=60752" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@169-231-178-94.wireless.ucsb.edu:60752" "--executor-id" "0" "--hostname" "169.231.178.94" "--cores" "1" "--app-id" "app-20230301160707-0024" "--worker-url" "spark://Worker@169.231.178.94:65132"
+========================================
+
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+23/03/01 16:10:13 INFO CoarseGrainedExecutorBackend: Started daemon with process name: 97685@169-231-178-94.wireless.ucsb.edu
+23/03/01 16:10:14 INFO SignalUtils: Registering signal handler for TERM
+23/03/01 16:10:14 INFO SignalUtils: Registering signal handler for HUP
+23/03/01 16:10:14 INFO SignalUtils: Registering signal handler for INT
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/Users/samridhi/spark/jars/spark-unsafe_2.13-3.2.3.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+23/03/01 16:10:14 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/03/01 16:10:15 INFO SecurityManager: Changing view acls to: root,f49f7d4d89b94f04978fe0888596249d
+23/03/01 16:10:15 INFO SecurityManager: Changing modify acls to: root,f49f7d4d89b94f04978fe0888596249d
+23/03/01 16:10:15 INFO SecurityManager: Changing view acls groups to: 
+23/03/01 16:10:15 INFO SecurityManager: Changing modify acls groups to: 
+23/03/01 16:10:15 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root, f49f7d4d89b94f04978fe0888596249d); groups with view permissions: Set(); users  with modify permissions: Set(root, f49f7d4d89b94f04978fe0888596249d); groups with modify permissions: Set()
+23/03/01 16:10:15 INFO TransportClientFactory: Successfully created connection to 169-231-178-94.wireless.ucsb.edu/169.231.178.94:60752 after 151 ms (0 ms spent in bootstraps)
+23/03/01 16:10:16 INFO SecurityManager: Changing view acls to: root,f49f7d4d89b94f04978fe0888596249d
+23/03/01 16:10:16 INFO SecurityManager: Changing modify acls to: root,f49f7d4d89b94f04978fe0888596249d
+23/03/01 16:10:16 INFO SecurityManager: Changing view acls groups to: 
+23/03/01 16:10:16 INFO SecurityManager: Changing modify acls groups to: 
+23/03/01 16:10:16 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root, f49f7d4d89b94f04978fe0888596249d); groups with view permissions: Set(); users  with modify permissions: Set(root, f49f7d4d89b94f04978fe0888596249d); groups with modify permissions: Set()
+23/03/01 16:10:16 INFO TransportClientFactory: Successfully created connection to 169-231-178-94.wireless.ucsb.edu/169.231.178.94:60752 after 16 ms (0 ms spent in bootstraps)
+23/03/01 16:10:16 INFO DiskBlockManager: Created local directory at /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/spark-a5f06d5d-8e8b-4579-a07a-8a23d1256804/executor-3408c5c1-74ed-48aa-b8fd-0415296e9396/blockmgr-7e13d130-f72f-446d-a293-56d07ec1f3ec
+23/03/01 16:10:16 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+23/03/01 16:10:17 INFO CoarseGrainedExecutorBackend: Connecting to driver: spark://CoarseGrainedScheduler@169-231-178-94.wireless.ucsb.edu:60752
+23/03/01 16:10:17 INFO WorkerWatcher: Connecting to worker spark://Worker@169.231.178.94:65132
+23/03/01 16:10:17 INFO TransportClientFactory: Successfully created connection to /169.231.178.94:65132 after 11 ms (0 ms spent in bootstraps)
+23/03/01 16:10:17 INFO ResourceUtils: ==============================================================
+23/03/01 16:10:17 INFO ResourceUtils: No custom resources configured for spark.executor.
+23/03/01 16:10:17 INFO ResourceUtils: ==============================================================
+23/03/01 16:10:17 INFO WorkerWatcher: Successfully connected to spark://Worker@169.231.178.94:65132
+23/03/01 16:10:17 INFO CoarseGrainedExecutorBackend: Successfully registered with driver
+23/03/01 16:10:17 INFO Executor: Starting executor ID 0 on host 169.231.178.94
+23/03/01 16:10:17 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 62234.
+23/03/01 16:10:17 INFO NettyBlockTransferService: Server created on 169.231.178.94:62234
+23/03/01 16:10:17 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/03/01 16:10:17 INFO BlockManager: external shuffle service port = 7337
+23/03/01 16:10:17 INFO BlockManager: Registering executor with local external shuffle service.
+23/03/01 16:10:17 INFO TransportClientFactory: Successfully created connection to /169.231.178.94:7337 after 8 ms (0 ms spent in bootstraps)
+23/03/01 16:10:18 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(0, 169.231.178.94, 62234, None)
+23/03/01 16:10:18 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(0, 169.231.178.94, 62234, None)
+23/03/01 16:10:18 INFO BlockManager: Initialized BlockManager: BlockManagerId(0, 169.231.178.94, 62234, None)
+23/03/01 16:10:18 INFO CoarseGrainedExecutorBackend: Got assigned task 0
+23/03/01 16:10:18 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+23/03/01 16:10:18 INFO TorrentBroadcast: Started reading broadcast variable 1 with 1 pieces (estimated total size 4.0 MiB)
+23/03/01 16:10:18 INFO TransportClientFactory: Successfully created connection to 169-231-178-94.wireless.ucsb.edu/169.231.178.94:60772 after 12 ms (0 ms spent in bootstraps)
+23/03/01 16:10:18 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 4.4 KiB, free 434.4 MiB)
+23/03/01 16:10:18 INFO TorrentBroadcast: Reading broadcast variable 1 took 327 ms
+23/03/01 16:10:19 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 8.3 KiB, free 434.4 MiB)
+23/03/01 16:10:19 INFO FileScanRDD: Reading File path: file:///Users/samridhi/sandbox/f49f7d4d89b94f04978fe0888596249d/.data/samridhim/publish-demo-2/a, range: 0-5, partition values: [empty row]
+23/03/01 16:10:20 INFO CodeGenerator: Code generated in 474.403875 ms
+23/03/01 16:10:20 INFO TorrentBroadcast: Started reading broadcast variable 0 with 1 pieces (estimated total size 4.0 MiB)
+23/03/01 16:10:21 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 33.8 KiB, free 434.4 MiB)
+23/03/01 16:10:21 INFO TorrentBroadcast: Reading broadcast variable 0 took 72 ms
+23/03/01 16:10:21 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 382.0 KiB, free 434.0 MiB)
+23/03/01 16:10:21 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 1562 bytes result sent to driver
